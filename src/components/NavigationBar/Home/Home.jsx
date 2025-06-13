@@ -9,20 +9,26 @@ const features = [
     icon: "📝",
   },
   {
-    title: "Track Progress",
-    description: "Mark todos as completed or incomplete in one click.",
-    icon: "✅",
-  },
-  {
     title: "Edit & Delete",
     description: "Update or remove tasks anytime from your list.",
     icon: "✏️",
   },
   {
-    title: "Filter Todos",
-    description: "View all, completed, or incomplete tasks in organized tabs.",
-    icon: "📂",
+    title: "Track Progress",
+    description: "Mark todos as completed or incomplete in one click.",
+    icon: "✅",
   },
+ {
+  title: "Filter Todos",
+  description: "View all, completed, or incomplete tasks in organized tabs.",
+  icon: "🔍",
+},
+  {
+  title: "Save Todos to Local Storage",
+  description: "Automatically save and retrieve your tasks, even after refreshing the page.",
+  icon: "📂",
+}
+
 ];
 
 const Home = () => {

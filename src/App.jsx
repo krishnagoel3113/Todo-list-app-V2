@@ -10,11 +10,21 @@ import Feedback from './components/NavigationBar/Feedback/Feedback';
 import Footer from './components/FooterBar/Footer';
 import './App.css';
 import { TodoContext } from './components/TodoContext/TodoContext';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 function App() {
-  const [todos, setTodos] = useState([]);
+//  loads whenever refreshed
+   const getInitialTodos = () => {
+    const storedTodos = localStorage.getItem('todos');
+    return storedTodos ? JSON.parse(storedTodos) : [];
+  };
 
+  const [todos, setTodos] = useState(getInitialTodos);
+
+  // Save to localStorage whenever `todos` changes
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
   return (
     <TodoContext.Provider value={{ todos, setTodos }}>
       <Router>
