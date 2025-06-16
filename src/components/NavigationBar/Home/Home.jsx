@@ -35,7 +35,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='homeContainer'>
+    <div className='homeContainer h-[60rem] sm-h-[60rem] xl:h-[50rem] w-[38rem] sm:w-[46rem]  lg:w-[70vw] mb-15'>
       <h1 className="text-4xl font-bold text-center mb-2 text-green-400">Welcome to TodoZen</h1>
       <p className="text-center mb-6 text-lg text-gray-300">
         Organize your life, one task at a time.

@@ -5,10 +5,10 @@ footer{
   text-align: center;
   padding: 0.5rem;
   margin-top: auto;
-  /* position: fixed; */
-  position:sticky;
+  position: fixed;
   bottom: 0;
   font-size: x-large;
 
 
 }
+

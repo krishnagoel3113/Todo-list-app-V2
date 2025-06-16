@@ -54,7 +54,7 @@ const handleCancel = ()=>{
 
 }
   return (
-    <div className='createTodoContainer'>
+    <div className='createTodoContainer w-[90%] lg:w-[70vw] h-[78vh]'>
       <div className='text-gray-400 text-2xl rounded-2xl pb-3 '><h2>{location.state?.todo?"Edit Your Todo":"CREATE YOUR TODO"}</h2></div>
       {/* my form */}
       <div className="form-container">

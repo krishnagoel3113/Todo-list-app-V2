@@ -28,7 +28,9 @@ function App() {
   return (
     <TodoContext.Provider value={{ todos, setTodos }}>
       <Router>
-        <div className='box'>
+        {/* <div className='biggestContainer w-[40rem] sm:w-[48rem] md:w-[51rem] lg:w-[64rem] xl:w-[80rem] '> */}
+        <div className='biggestContainer w-[40rem] sm:w-[100%] '>
+        {/* <div className='biggestContainer h-[70rem] md:h-[57rem]  w-[40rem] sm:w-[100%] '> */}
           <Navbar />
           <div>
             <Routes>
